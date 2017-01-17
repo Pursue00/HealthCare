@@ -1,0 +1,5 @@
+E:\WorkSpace\Outsourcing\医疗健康\代码\HealthCare\HealthCareService\bin\Debug\HealthCareService.dll.config
+E:\WorkSpace\Outsourcing\医疗健康\代码\HealthCare\HealthCareService\bin\Debug\HealthCareService.dll
+E:\WorkSpace\Outsourcing\医疗健康\代码\HealthCare\HealthCareService\bin\Debug\HealthCareService.pdb
+E:\WorkSpace\Outsourcing\医疗健康\代码\HealthCare\HealthCareService\obj\Debug\HealthCareService.dll
+E:\WorkSpace\Outsourcing\医疗健康\代码\HealthCare\HealthCareService\obj\Debug\HealthCareService.pdb

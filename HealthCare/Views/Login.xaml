@@ -3,6 +3,7 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:common="clr-namespace:HealthCare.Common"
       mc:Ignorable="d" 
       d:DesignHeight="768" d:DesignWidth="1024"
 	  Title="Login">
@@ -18,12 +19,15 @@
         <Canvas x:Name="canvas" Grid.Row="1">
             <TextBlock x:Name="tbName" Text="用户名" Foreground="Black" FontSize="18" Width="60" Height="36" Canvas.Left="66" Canvas.Top="38"></TextBlock>
             <TextBlock x:Name="tbPassWord" Text="密   码" Foreground="Black" FontSize="18" Width="60" Height="36" Canvas.Left="66" Canvas.Top="90"></TextBlock>
-            <TextBox x:Name="tb" Foreground="Black" FontSize="18" Width="234" Height="36" Canvas.Left="132" Canvas.Top="34" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"></TextBox>
-            <PasswordBox x:Name="pb" Foreground="Black" FontSize="18" Width="234" Height="36" Canvas.Left="132" Canvas.Top="85" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"></PasswordBox>
+            <TextBox x:Name="tb" Foreground="Black" FontSize="18" Width="234" Height="36" Canvas.Left="132" Canvas.Top="34" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"
+                     Text="{Binding UserName}"></TextBox>
+            <PasswordBox x:Name="pb" common:PasswordBoxBindingHelper.IsPasswordBindingEnabled="true" common:PasswordBoxBindingHelper.BindedPassword="{Binding PassWord,Mode=TwoWay}"
+                         Foreground="Black" FontSize="18" Width="234" Height="36" Canvas.Left="132" Canvas.Top="85" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"
+                         BorderBrush="#00000000"  d:LayoutOverrides="VerticalAlignment"></PasswordBox>
             <Button x:Name="btnLogin" Content="登  录" FontSize="18" Foreground="White" Width="131" Height="36" Canvas.Left="62" Canvas.Top="164"
-                    Style="{StaticResource ButtonLoginStyle}"></Button>
+                    Style="{StaticResource ButtonLoginStyle}" Command="{Binding BtnCommand}" CommandParameter="login"></Button>
             <Button x:Name="btnCancel" Content="取  消" FontSize="18" Foreground="White" Width="131" Height="36" Canvas.Left="230" Canvas.Top="164"
-                    Style="{StaticResource ButtonCancelStyle}"></Button>
+                    Style="{StaticResource ButtonCancelStyle}" Command="{Binding BtnCommand}" CommandParameter="cancel"></Button>
         </Canvas>
     </Grid>
     </Border>

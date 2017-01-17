@@ -53,6 +53,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Common\PasswordBoxBindingHelper.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="Views\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
@@ -115,6 +117,20 @@
   <ItemGroup>
     <Folder Include="CustomControls\" />
     <Folder Include="Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HealthCareModel\HealthCareModel.csproj">
+      <Project>{8be3a73e-5ca1-4230-9757-00e155197516}</Project>
+      <Name>HealthCareModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HealthCareService\HealthCareService.csproj">
+      <Project>{8854bea5-3b0f-4838-ac01-f2486708bf1b}</Project>
+      <Name>HealthCareService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HealthCareUnity\HealthCareUnity.csproj">
+      <Project>{7b2471d2-c8eb-4f63-92db-a03dffd7e0b5}</Project>
+      <Name>HealthCareUnity</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

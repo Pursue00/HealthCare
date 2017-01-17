@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCareService", "Health
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCareUnity", "HealthCareUnity\HealthCareUnity.csproj", "{7B2471D2-C8EB-4F63-92DB-A03DFFD7E0B5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCareModel", "HealthCareModel\HealthCareModel.csproj", "{8BE3A73E-5CA1-4230-9757-00E155197516}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{7B2471D2-C8EB-4F63-92DB-A03DFFD7E0B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B2471D2-C8EB-4F63-92DB-A03DFFD7E0B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B2471D2-C8EB-4F63-92DB-A03DFFD7E0B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BE3A73E-5CA1-4230-9757-00E155197516}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BE3A73E-5CA1-4230-9757-00E155197516}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BE3A73E-5CA1-4230-9757-00E155197516}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BE3A73E-5CA1-4230-9757-00E155197516}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

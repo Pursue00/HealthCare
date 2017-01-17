@@ -1,4 +1,6 @@
-﻿using System;
+﻿using HealthCare.ViewModels;
+using HealthCareUnity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +22,18 @@ namespace HealthCare.Views
     /// </summary>
     public partial class Login : Page
     {
+        #region Fileds
+        public LoginViewModel _viewModel = null;
+      
+        #endregion
+       
         public Login()
         {
             InitializeComponent();
+            _viewModel = new LoginViewModel();
+            this.DataContext = _viewModel;
         }
+
+       
     }
 }
