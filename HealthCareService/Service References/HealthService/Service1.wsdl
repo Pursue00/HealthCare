@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://112.74.96.102:8080/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://112.74.96.102:8080/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://112.74.96.102:8080/Service1.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_ShiPian_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:ShiPian_Login" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ShiPian_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ShiPian_LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Hall_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Hall_Login" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Hall_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Hall_LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Get_Richeng_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Richeng" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Get_Richeng_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_RichengResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Get_TableInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_TableInfo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Get_TableInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_TableInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ExecuteNonQuery_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteNonQuery" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ExecuteNonQuery_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteNonQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Get_Togeter_hall_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Togeter_hall" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Get_Togeter_hall_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Togeter_hallResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Get_Togeter_date_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Togeter_date" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Get_Togeter_date_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Togeter_dateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DelProgram_InputMessage">
+    <wsdl:part name="parameters" element="tns:DelProgram" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DelProgram_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DelProgramResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Update_Richeng_InputMessage">
+    <wsdl:part name="parameters" element="tns:Update_Richeng" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Update_Richeng_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Update_RichengResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Add_Richeng_InputMessage">
+    <wsdl:part name="parameters" element="tns:Add_Richeng" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Add_Richeng_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Add_RichengResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="ShiPian_Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ShiPian_Login" message="tns:IService1_ShiPian_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ShiPian_LoginResponse" message="tns:IService1_ShiPian_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Hall_Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Hall_Login" message="tns:IService1_Hall_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/Hall_LoginResponse" message="tns:IService1_Hall_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Richeng">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Get_Richeng" message="tns:IService1_Get_Richeng_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/Get_RichengResponse" message="tns:IService1_Get_Richeng_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_TableInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Get_TableInfo" message="tns:IService1_Get_TableInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/Get_TableInfoResponse" message="tns:IService1_Get_TableInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteNonQuery">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ExecuteNonQuery" message="tns:IService1_ExecuteNonQuery_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ExecuteNonQueryResponse" message="tns:IService1_ExecuteNonQuery_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Togeter_hall">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Get_Togeter_hall" message="tns:IService1_Get_Togeter_hall_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/Get_Togeter_hallResponse" message="tns:IService1_Get_Togeter_hall_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Togeter_date">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Get_Togeter_date" message="tns:IService1_Get_Togeter_date_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/Get_Togeter_dateResponse" message="tns:IService1_Get_Togeter_date_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DelProgram">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DelProgram" message="tns:IService1_DelProgram_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DelProgramResponse" message="tns:IService1_DelProgram_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Update_Richeng">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Update_Richeng" message="tns:IService1_Update_Richeng_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/Update_RichengResponse" message="tns:IService1_Update_Richeng_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Add_Richeng">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Add_Richeng" message="tns:IService1_Add_Richeng_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/Add_RichengResponse" message="tns:IService1_Add_Richeng_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ShiPian_Login">
+      <soap:operation soapAction="http://tempuri.org/IService1/ShiPian_Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Hall_Login">
+      <soap:operation soapAction="http://tempuri.org/IService1/Hall_Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Richeng">
+      <soap:operation soapAction="http://tempuri.org/IService1/Get_Richeng" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_TableInfo">
+      <soap:operation soapAction="http://tempuri.org/IService1/Get_TableInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteNonQuery">
+      <soap:operation soapAction="http://tempuri.org/IService1/ExecuteNonQuery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Togeter_hall">
+      <soap:operation soapAction="http://tempuri.org/IService1/Get_Togeter_hall" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Togeter_date">
+      <soap:operation soapAction="http://tempuri.org/IService1/Get_Togeter_date" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelProgram">
+      <soap:operation soapAction="http://tempuri.org/IService1/DelProgram" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_Richeng">
+      <soap:operation soapAction="http://tempuri.org/IService1/Update_Richeng" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Add_Richeng">
+      <soap:operation soapAction="http://tempuri.org/IService1/Add_Richeng" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://112.74.96.102:8080/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCare", "HealthCare\HealthCare.csproj", "{77AD7435-6AA2-4CFE-97F3-63C079FDB8DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCareService", "HealthCareService\HealthCareService.csproj", "{8854BEA5-3B0F-4838-AC01-F2486708BF1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCareUnity", "HealthCareUnity\HealthCareUnity.csproj", "{7B2471D2-C8EB-4F63-92DB-A03DFFD7E0B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77AD7435-6AA2-4CFE-97F3-63C079FDB8DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77AD7435-6AA2-4CFE-97F3-63C079FDB8DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77AD7435-6AA2-4CFE-97F3-63C079FDB8DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77AD7435-6AA2-4CFE-97F3-63C079FDB8DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8854BEA5-3B0F-4838-AC01-F2486708BF1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8854BEA5-3B0F-4838-AC01-F2486708BF1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8854BEA5-3B0F-4838-AC01-F2486708BF1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8854BEA5-3B0F-4838-AC01-F2486708BF1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B2471D2-C8EB-4F63-92DB-A03DFFD7E0B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B2471D2-C8EB-4F63-92DB-A03DFFD7E0B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B2471D2-C8EB-4F63-92DB-A03DFFD7E0B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B2471D2-C8EB-4F63-92DB-A03DFFD7E0B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
