@@ -25,9 +25,9 @@
                     <ImageBrush ImageSource="pack://siteoforigin:,,,/Images/lansebeijingtu.png"/>
                 </Grid.Background>
                 <TextBlock Text="中华医学会第二十次全国心血管病学年会" FontFamily="SimSun" FontSize="36" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="35 0 0 0"/>
-                <Button Style="{StaticResource ButtonChineseStyle}" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="850 0 0 0"
+                <Button Style="{StaticResource ButtonChineseStyle}" HorizontalAlignment="Right"  VerticalAlignment="Center"  Margin="0 0 100 0"
                         Content="中  文" FontSize="16" Foreground="Blue"  Width="60" Height="36"/>
-                <Button Style="{StaticResource ButtonEnglishStyle}" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="915 0 0 0"
+                <Button Style="{StaticResource ButtonEnglishStyle}" HorizontalAlignment="Right"  VerticalAlignment="Center"  Margin="0 0 10 0"
                         Content="English" FontSize="16" Foreground="Black"  Width="70" Height="36"/>
             </Grid>
             <Grid x:Name="gridComBox" Grid.Row="1" Background="#F1F7FB">
@@ -47,11 +47,11 @@
                         Content="提  交" FontSize="18" Foreground="White" Width="131" Height="36"/>
             </Grid>
             <Grid x:Name="gridButton" Grid.Row="2">
-                <Button Style="{StaticResource ButtonSubmmitStyle}" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="890 0 0 0"
+                <Button Style="{StaticResource ButtonSubmmitStyle}" HorizontalAlignment="Right"  VerticalAlignment="Center"  Margin="0 0 296 0"
                         Content="修改日程" FontSize="18" Foreground="White" Width="131" Height="36"/>
-                <Button Style="{StaticResource ButtonSubmmitStyle}" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="1050 0 0 0"
+                <Button Style="{StaticResource ButtonSubmmitStyle}" HorizontalAlignment="Right"  VerticalAlignment="Center"  Margin="0 0 154 0"
                         Content="打  印" FontSize="18" Foreground="White" Width="131" Height="36"/>
-                <Button Style="{StaticResource ButtonNotificationsStyle}" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="1200 0 0 0"
+                <Button Style="{StaticResource ButtonNotificationsStyle}" HorizontalAlignment="Right"  VerticalAlignment="Center"  Margin="0 0 10 0"
                         Content="发布通知" FontSize="18" Foreground="White" Width="131" Height="36"/>
             </Grid>
             <Grid x:Name="gridDataGrid" Grid.Row="3">
