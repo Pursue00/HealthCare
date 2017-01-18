@@ -1,5 +1,21 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Key="dataGridUploadStyle" TargetType="DataGrid">
+        <!--网格线颜色-->
+        <Setter Property="CanUserResizeColumns" Value="false"/>
+        <Setter Property="Background" Value="#DAEAFA" />
+        <Setter Property="BorderBrush" Value="#A0DFBF"/>
+        <Setter Property="HorizontalGridLinesBrush">
+            <Setter.Value>
+                <SolidColorBrush Color="#d6c79b"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="VerticalGridLinesBrush">
+            <Setter.Value>
+                <SolidColorBrush Color="#d6c79b"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
     <Style x:Key="dataGridStyle" TargetType="DataGrid">
         <!--网格线颜色-->
         <Setter Property="CanUserResizeColumns" Value="false"/>

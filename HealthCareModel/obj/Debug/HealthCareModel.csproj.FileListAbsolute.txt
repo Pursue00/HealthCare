@@ -7,3 +7,4 @@ E:\赵立江\WorkSpace\GIT\HealthCare\HealthCareModel\bin\Debug\HealthCareModel.
 E:\赵立江\WorkSpace\GIT\HealthCare\HealthCareModel\bin\Debug\HealthCareModel.pdb
 E:\赵立江\WorkSpace\GIT\HealthCare\HealthCareModel\obj\Debug\HealthCareModel.dll
 E:\赵立江\WorkSpace\GIT\HealthCare\HealthCareModel\obj\Debug\HealthCareModel.pdb
+E:\赵立江\WorkSpace\GIT\HealthCare\HealthCareModel\obj\Debug\HealthCareModel.csprojResolveAssemblyReference.cache

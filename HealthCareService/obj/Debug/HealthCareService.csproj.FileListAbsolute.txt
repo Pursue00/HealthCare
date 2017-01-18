@@ -8,3 +8,4 @@ E:\赵立江\WorkSpace\GIT\HealthCare\HealthCareService\bin\Debug\HealthCareServ
 E:\赵立江\WorkSpace\GIT\HealthCare\HealthCareService\bin\Debug\HealthCareService.pdb
 E:\赵立江\WorkSpace\GIT\HealthCare\HealthCareService\obj\Debug\HealthCareService.dll
 E:\赵立江\WorkSpace\GIT\HealthCare\HealthCareService\obj\Debug\HealthCareService.pdb
+E:\赵立江\WorkSpace\GIT\HealthCare\HealthCareService\obj\Debug\HealthCareService.csprojResolveAssemblyReference.cache

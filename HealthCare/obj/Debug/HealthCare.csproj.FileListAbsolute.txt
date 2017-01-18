@@ -92,3 +92,9 @@ E:\赵立江\WorkSpace\GIT\HealthCare\HealthCare\bin\Debug\Images\中华医学�
 E:\赵立江\WorkSpace\GIT\HealthCare\HealthCare\bin\Debug\Images\喇叭.jpg
 E:\赵立江\WorkSpace\GIT\HealthCare\HealthCare\bin\Debug\Images\登录页面5-12.jpg
 E:\赵立江\WorkSpace\GIT\HealthCare\HealthCare\bin\Debug\Images\bg.jpg
+E:\赵立江\WorkSpace\GIT\HealthCare\HealthCare\obj\Debug\Views\Upload.baml
+E:\赵立江\WorkSpace\GIT\HealthCare\HealthCare\obj\Debug\Views\Upload.g.cs
+E:\赵立江\WorkSpace\GIT\HealthCare\HealthCare\obj\Debug\CustomControls\ImageRichTextControl.baml
+E:\赵立江\WorkSpace\GIT\HealthCare\HealthCare\obj\Debug\Views\HallView.baml
+E:\赵立江\WorkSpace\GIT\HealthCare\HealthCare\obj\Debug\CustomControls\ImageRichTextControl.g.cs
+E:\赵立江\WorkSpace\GIT\HealthCare\HealthCare\obj\Debug\Views\HallView.g.cs

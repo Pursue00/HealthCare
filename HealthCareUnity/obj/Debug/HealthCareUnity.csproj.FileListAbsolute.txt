@@ -7,3 +7,4 @@ E:\赵立江\WorkSpace\GIT\HealthCare\HealthCareUnity\bin\Debug\HealthCareUnity.
 E:\赵立江\WorkSpace\GIT\HealthCare\HealthCareUnity\bin\Debug\HealthCareUnity.pdb
 E:\赵立江\WorkSpace\GIT\HealthCare\HealthCareUnity\obj\Debug\HealthCareUnity.dll
 E:\赵立江\WorkSpace\GIT\HealthCare\HealthCareUnity\obj\Debug\HealthCareUnity.pdb
+E:\赵立江\WorkSpace\GIT\HealthCare\HealthCareUnity\obj\Debug\HealthCareUnity.csprojResolveAssemblyReference.cache
