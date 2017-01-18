@@ -3,3 +3,7 @@ E:\WorkSpace\Outsourcing\医疗健康\代码\HealthCare\HealthCareUnity\bin\Debu
 E:\WorkSpace\Outsourcing\医疗健康\代码\HealthCare\HealthCareUnity\obj\Debug\HealthCareUnity.csprojResolveAssemblyReference.cache
 E:\WorkSpace\Outsourcing\医疗健康\代码\HealthCare\HealthCareUnity\obj\Debug\HealthCareUnity.dll
 E:\WorkSpace\Outsourcing\医疗健康\代码\HealthCare\HealthCareUnity\obj\Debug\HealthCareUnity.pdb
+E:\赵立江\WorkSpace\GIT\HealthCare\HealthCareUnity\bin\Debug\HealthCareUnity.dll
+E:\赵立江\WorkSpace\GIT\HealthCare\HealthCareUnity\bin\Debug\HealthCareUnity.pdb
+E:\赵立江\WorkSpace\GIT\HealthCare\HealthCareUnity\obj\Debug\HealthCareUnity.dll
+E:\赵立江\WorkSpace\GIT\HealthCare\HealthCareUnity\obj\Debug\HealthCareUnity.pdb

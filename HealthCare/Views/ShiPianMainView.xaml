@@ -1,0 +1,78 @@
+﻿<Page x:Class="HealthCare.Views.ShiPianMainView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="768" d:DesignWidth="1024"
+	  Title="ShiPianMainView">
+    <Grid Width="Auto" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Background="#EFF3FB" Grid.Column="0">
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="78"/>
+                <RowDefinition Height="68"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid x:Name="gridTop" Grid.Row="0">
+                <Grid.Background>
+                    <ImageBrush ImageSource="pack://siteoforigin:,,,/Images/lansebeijingtu.png"/>
+                </Grid.Background>
+                <TextBlock Text="中华医学会第二十次全国心血管病学年会" FontFamily="SimSun" FontSize="36" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="35 0 0 0"/>
+                <Button Style="{StaticResource ButtonChineseStyle}" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="850 0 0 0"
+                        Content="中  文" FontSize="16" Foreground="Blue"  Width="60" Height="36"/>
+                <Button Style="{StaticResource ButtonEnglishStyle}" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="915 0 0 0"
+                        Content="English" FontSize="16" Foreground="Black"  Width="70" Height="36"/>
+            </Grid>
+            <Grid x:Name="gridComBox" Grid.Row="1" Background="#F1F7FB">
+                <TextBlock Text="姓名" FontFamily="Fonts/Fonts.zip#Microsoft YaHei" FontSize="20" Foreground="#333333" Margin="35 28 0 0" 
+                           HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <TextBox Width="190" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="90 24 0 0"/>
+                <TextBlock Text="日期" FontFamily="Fonts/Fonts.zip#Microsoft YaHei" FontSize="20" Foreground="#333333" Margin="320 28 0 0" 
+                           HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <ComboBox Style="{StaticResource ComboBoxStyle}" Width="190" Height="30" Margin="380 24 0 0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <TextBlock Text="会场" FontFamily="Fonts/Fonts.zip#Microsoft YaHei" FontSize="20" Foreground="#333333" Margin="610 28 0 0" 
+                           HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <ComboBox Style="{StaticResource ComboBoxStyle}" Width="190" Height="30" HorizontalAlignment="Left" Margin="670 24 0 0" VerticalAlignment="Top"/>
+                <TextBlock Text="是否提交" FontFamily="Fonts/Fonts.zip#Microsoft YaHei" FontSize="20" Foreground="#333333" Margin="890 28 0 0" 
+                           HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <ComboBox Style="{StaticResource ComboBoxStyle}" Width="190" Height="30" HorizontalAlignment="Left" Margin="990 24 0 0" VerticalAlignment="Top"/>
+                <Button Style="{StaticResource ButtonSubmmitStyle}" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="1220 0 0 0"
+                        Content="提  交" FontSize="18" Foreground="White" Width="131" Height="36"/>
+            </Grid>
+            <Grid x:Name="gridButton" Grid.Row="2">
+                <Button Style="{StaticResource ButtonSubmmitStyle}" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="890 0 0 0"
+                        Content="修改日程" FontSize="18" Foreground="White" Width="131" Height="36"/>
+                <Button Style="{StaticResource ButtonSubmmitStyle}" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="1050 0 0 0"
+                        Content="打  印" FontSize="18" Foreground="White" Width="131" Height="36"/>
+                <Button Style="{StaticResource ButtonNotificationsStyle}" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="1200 0 0 0"
+                        Content="发布通知" FontSize="18" Foreground="White" Width="131" Height="36"/>
+            </Grid>
+            <Grid x:Name="gridDataGrid" Grid.Row="3">
+                <DataGrid x:Name="dataGird" Style="{StaticResource  dataGridStyle}" AutoGenerateColumns="False" VerticalAlignment="Top" HorizontalAlignment="Stretch"
+                  CanUserSortColumns="False"  Width="Auto" Height="Auto"  Margin="5" IsReadOnly="True"
+                  CanUserResizeColumns="False" CanUserResizeRows="False"  SelectionMode="Single"
+                  CanUserReorderColumns="False" AlternationCount="2"  RowHeaderWidth="0" CanUserAddRows="False" >
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ID" Width="150"  Binding="{Binding  id}"/>
+                        <DataGridTextColumn Header="会场"   Width="120"  Binding="{Binding Togeter_hall}"/>
+                        <DataGridTextColumn Header="日期"  Width="120"  Binding="{Binding Togeter_date}"/>
+                        <DataGridTextColumn Header="时间"  Width="130"  Binding="{Binding Zf}"/>
+                        <DataGridTextColumn Header="题目"  Width="140"  Binding="{Binding Dxqsg}"/>
+                        <DataGridTextColumn Header="讲者" Width="150"  Binding="{Binding  Name}"/>
+                        <DataGridTextColumn Header="状态"   Width="120"  Binding="{Binding Zxj}"/>
+                        <DataGridTextColumn Header="视频"  Width="120"  Binding="{Binding have_video}"/>
+                        <DataGridTextColumn Header="简介"  Width="130"  Binding="{Binding Zf}"/>
+                        <DataGridTextColumn Header="预览"  Width="140"  Binding="{Binding Dxqsg}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

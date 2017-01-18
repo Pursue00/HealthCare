@@ -3,3 +3,8 @@ E:\WorkSpace\Outsourcing\医疗健康\代码\HealthCare\HealthCareService\bin\De
 E:\WorkSpace\Outsourcing\医疗健康\代码\HealthCare\HealthCareService\bin\Debug\HealthCareService.pdb
 E:\WorkSpace\Outsourcing\医疗健康\代码\HealthCare\HealthCareService\obj\Debug\HealthCareService.dll
 E:\WorkSpace\Outsourcing\医疗健康\代码\HealthCare\HealthCareService\obj\Debug\HealthCareService.pdb
+E:\赵立江\WorkSpace\GIT\HealthCare\HealthCareService\bin\Debug\HealthCareService.dll.config
+E:\赵立江\WorkSpace\GIT\HealthCare\HealthCareService\bin\Debug\HealthCareService.dll
+E:\赵立江\WorkSpace\GIT\HealthCare\HealthCareService\bin\Debug\HealthCareService.pdb
+E:\赵立江\WorkSpace\GIT\HealthCare\HealthCareService\obj\Debug\HealthCareService.dll
+E:\赵立江\WorkSpace\GIT\HealthCare\HealthCareService\obj\Debug\HealthCareService.pdb

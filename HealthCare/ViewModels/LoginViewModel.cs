@@ -13,6 +13,7 @@ namespace HealthCare.ViewModels
     {
         #region Fileds
         public RelayCommand<object> BtnCommand { get; private set; }
+        public Action<string> LoginEvent;
         #endregion
 
         public LoginViewModel()
@@ -44,13 +45,15 @@ namespace HealthCare.ViewModels
 
         #endregion
         #region Public Method
-        private async void OnBtnCommand(object arg)
+        private  void OnBtnCommand(object arg)
         {
             string cmd = arg.ToString().ToLower();
             switch (cmd)
             {
                 case "login":
-                    System.Data.DataSet _DT = await WCFClient.ShiPian_LoginAsync(this.UserName, "123456");
+                    if (LoginEvent != null)
+                        LoginEvent(this.UserName);
+                    
                     break;
                 case "cancel":
                     break;

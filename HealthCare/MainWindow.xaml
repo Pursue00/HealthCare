@@ -1,9 +1,9 @@
 ﻿<Window x:Class="HealthCare.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="{Binding TitleName}"  Height="768" Width="1024" 
+        Title="医疗健康"  Height="768" Width="1024" 
         Icon="{Binding Logo}" 
-        WindowStartupLocation="CenterScreen" WindowState="Maximized" Closed="Window_Closed"
+        WindowStartupLocation="CenterScreen" WindowState="Maximized" ResizeMode="NoResize"  Closed="Window_Closed" Unloaded="Window_Unloaded"
         >
     <Grid>
         <Frame x:Name="PageFrame" NavigationUIVisibility="Hidden"></Frame>

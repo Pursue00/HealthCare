@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\WorkSpace\Outsourcing\医疗健康\代码\HealthCare\HealthCare\obj\Debug\
+E:\赵立江\WorkSpace\GIT\HealthCare\HealthCare\obj\Debug\
 HealthCare
 none
 false
 DEBUG;TRACE
-E:\WorkSpace\Outsourcing\医疗健康\代码\HealthCare\HealthCare\App.xaml
-5-322710199
+E:\赵立江\WorkSpace\GIT\HealthCare\HealthCare\App.xaml
+81880627664
 
-12162569337
-15-1287483410
-MainWindow.xaml;Styles\BaseDictionary.xaml;Styles\ButtonStyleDictionary.xaml;Styles\ListBoxStyleDictionary.xaml;Views\Login.xaml;
+131100886365
+15-570295024
+MainWindow.xaml;Styles\BaseDictionary.xaml;Styles\ButtonStyleDictionary.xaml;Styles\ComboBoxStyleDictionary.xaml;Styles\DataGridStyleDictionary.xaml;Styles\ListBoxStyleDictionary.xaml;Views\Login.xaml;Views\ShiPianMainView.xaml;
 
-True
+False
 

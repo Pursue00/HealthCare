@@ -5,30 +5,39 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:common="clr-namespace:HealthCare.Common"
       mc:Ignorable="d" 
-      d:DesignHeight="768" d:DesignWidth="1024"
-	  Title="Login">
+      d:DesignHeight="768" d:DesignWidth="1024" Unloaded="Page_Unloaded"
+	  Title="医疗健康">
+    <Page.Background>
+        <ImageBrush ImageSource="pack://siteoforigin:,,,/Images/bg.jpg"/>
+    </Page.Background>
     <Border BorderBrush="Gray" BorderThickness="0.5"  CornerRadius="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="413" Height="316">
-    <Grid >
-    	<Grid.RowDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
     		<RowDefinition Height="60"/>
     		<RowDefinition Height="*"/>
     	</Grid.RowDefinitions>
-        <Grid Margin="0" Background="#0F9FDC">
-            <TextBlock Text="试片室登录" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        </Grid>
-        <Canvas x:Name="canvas" Grid.Row="1">
-            <TextBlock x:Name="tbName" Text="用户名" Foreground="Black" FontSize="18" Width="60" Height="36" Canvas.Left="66" Canvas.Top="38"></TextBlock>
-            <TextBlock x:Name="tbPassWord" Text="密   码" Foreground="Black" FontSize="18" Width="60" Height="36" Canvas.Left="66" Canvas.Top="90"></TextBlock>
-            <TextBox x:Name="tb" Foreground="Black" FontSize="18" Width="234" Height="36" Canvas.Left="132" Canvas.Top="34" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"
+            <Grid Margin="0" Background="#0F9FDC">
+                <StackPanel Orientation="Horizontal"  HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Width="28" Height="30" Source="pack://siteoforigin:,,,/Images/shouyyys.png"/>
+                    <TextBlock Text="试片室登录" FontSize="30" FontWeight="Bold" Foreground="White" Margin="10 0 0 0"/>
+                </StackPanel>
+            </Grid>
+            <Canvas x:Name="canvas" Grid.Row="1" Background="White">
+                <TextBlock x:Name="tbName" Text="用户名" Foreground="Black" FontSize="18" Width="60" Height="36" Canvas.Left="66" Canvas.Top="38"></TextBlock>
+                <TextBlock x:Name="tbPassWord" Text="密   码" Foreground="Black" FontSize="18" Width="60" Height="36" Canvas.Left="66" Canvas.Top="90"></TextBlock>
+                <TextBox x:Name="tb" Foreground="Black" FontSize="18" Width="234" Height="36" Canvas.Left="132" Canvas.Top="34" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"
                      Text="{Binding UserName}"></TextBox>
-            <PasswordBox x:Name="pb" common:PasswordBoxBindingHelper.IsPasswordBindingEnabled="true" common:PasswordBoxBindingHelper.BindedPassword="{Binding PassWord,Mode=TwoWay}"
+                <!--<PasswordBox x:Name="pb" common:PasswordBoxBindingHelper.IsPasswordBindingEnabled="true" common:PasswordBoxBindingHelper.BindedPassword="{Binding PassWord,Mode=TwoWay}"
                          Foreground="Black" FontSize="18" Width="234" Height="36" Canvas.Left="132" Canvas.Top="85" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"
-                         BorderBrush="#00000000"  d:LayoutOverrides="VerticalAlignment"></PasswordBox>
-            <Button x:Name="btnLogin" Content="登  录" FontSize="18" Foreground="White" Width="131" Height="36" Canvas.Left="62" Canvas.Top="164"
+                          d:LayoutOverrides="VerticalAlignment"></PasswordBox>-->
+                <PasswordBox x:Name="pb"
+                          Foreground="Black" FontSize="18" Width="234" Height="36" Canvas.Left="132" Canvas.Top="85" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"
+                          d:LayoutOverrides="VerticalAlignment"></PasswordBox>
+                <Button x:Name="btnLogin" Content="登  录" FontSize="18" Foreground="White" Width="131" Height="36" Canvas.Left="62" Canvas.Top="164"
                     Style="{StaticResource ButtonLoginStyle}" Command="{Binding BtnCommand}" CommandParameter="login"></Button>
-            <Button x:Name="btnCancel" Content="取  消" FontSize="18" Foreground="White" Width="131" Height="36" Canvas.Left="230" Canvas.Top="164"
+                <Button x:Name="btnCancel" Content="取  消" FontSize="18" Foreground="White" Width="131" Height="36" Canvas.Left="230" Canvas.Top="164"
                     Style="{StaticResource ButtonCancelStyle}" Command="{Binding BtnCommand}" CommandParameter="cancel"></Button>
-        </Canvas>
-    </Grid>
+            </Canvas>
+        </Grid>
     </Border>
 </Page>

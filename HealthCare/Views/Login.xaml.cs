@@ -1,4 +1,5 @@
 ﻿using HealthCare.ViewModels;
+using HealthCareService;
 using HealthCareUnity;
 using System;
 using System.Collections.Generic;
@@ -24,16 +25,35 @@ namespace HealthCare.Views
     {
         #region Fileds
         public LoginViewModel _viewModel = null;
-      
+        public Action<string> LoginEvent;
         #endregion
        
         public Login()
         {
             InitializeComponent();
             _viewModel = new LoginViewModel();
+            _viewModel.LoginEvent += LoginSuccess;     
             this.DataContext = _viewModel;
         }
 
-       
+        //async void LoginSuccess(string account)
+        //{
+        //    //System.Data.DataSet _DT = await WCFClient.ShiPian_LoginAsync(account, pb.Password.Trim());
+
+        //    if (LoginEvent != null)
+        //        LoginEvent(account);
+        //}
+        void LoginSuccess(string account)
+        {
+            //System.Data.DataSet _DT = await WCFClient.ShiPian_LoginAsync(account, pb.Password.Trim());
+
+            if (LoginEvent != null)
+                LoginEvent(account);
+        }
+
+        private void Page_Unloaded(object sender, RoutedEventArgs e)
+        {
+            _viewModel.LoginEvent -= LoginSuccess;     
+        }
     }
 }

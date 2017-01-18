@@ -34,14 +34,25 @@ namespace HealthCare
             else
             {
                 var login = new Login();
-                //login.LoginEvent += LoginSuccess;
+                login.LoginEvent += LoginSuccess;
                 PageFrame.Navigate(login);
             }
+        }
+
+        void LoginSuccess(string account)
+        {
+            var shipianView = new ShiPianMainView();
+            PageFrame.Navigate(shipianView);
         }
 
         private void Window_Closed(object sender, EventArgs e)
         {
             System.Diagnostics.Process.GetCurrentProcess().Kill();
+        }
+
+        private void Window_Unloaded(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
