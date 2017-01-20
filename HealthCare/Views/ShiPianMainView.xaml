@@ -55,12 +55,12 @@
                         Content="发布通知" FontSize="18" Foreground="White" Width="131" Height="36"/>
             </Grid>
             <Grid x:Name="gridDataGrid" Grid.Row="3">
-                <DataGrid x:Name="dataGird" Style="{StaticResource  dataGridStyle}" AutoGenerateColumns="False" VerticalAlignment="Top" HorizontalAlignment="Stretch"
+                <DataGrid x:Name="dataGird" Style="{StaticResource  dataGridStyle}" ItemsSource="{Binding Path=ScheduleCollection}" AutoGenerateColumns="False" VerticalAlignment="Top" HorizontalAlignment="Stretch"
                   CanUserSortColumns="False"  Width="Auto" Height="Auto"  Margin="5" IsReadOnly="True"
                   CanUserResizeColumns="False" CanUserResizeRows="False"  SelectionMode="Single"
                   CanUserReorderColumns="False" AlternationCount="2"  RowHeaderWidth="0" CanUserAddRows="False" >
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="ID" Width="150"  Binding="{Binding  id}"/>
+                        <DataGridTextColumn Header="ID" Width="150"  Binding="{Binding  Id}"/>
                         <DataGridTextColumn Header="会场"   Width="120"  Binding="{Binding Togeter_hall}"/>
                         <DataGridTextColumn Header="日期"  Width="120"  Binding="{Binding Togeter_date}"/>
                         <DataGridTextColumn Header="时间"  Width="130"  Binding="{Binding Zf}"/>

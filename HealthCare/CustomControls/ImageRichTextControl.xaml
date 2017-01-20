@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
+             d:DesignHeight="300" d:DesignWidth="300" Width="438" Height="90">
     <UserControl.Resources>
         <SolidColorBrush x:Key="CheckBoxFillNormal" Color="#F4F4F4"/>
         <SolidColorBrush x:Key="CheckBoxStroke" Color="#8E8F8F"/>
@@ -39,67 +39,14 @@
                 </Setter.Value>
             </Setter>
         </Style>
-        <Style x:Key="SelectCheckBoxStyle" TargetType="{x:Type CheckBox}">
-            <Setter Property="Width" Value="32"/>
-            <Setter Property="Height" Value="32"/>
-            <Setter Property="FlowDirection" Value="LeftToRight"/>
-            <Setter Property="Margin" Value="0"/>
-            <Setter Property="HorizontalAlignment" Value="Center"/>
-            <Setter Property="VerticalAlignment" Value="Center"/>
-            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
-            <Setter Property="Background" Value="{StaticResource CheckBoxFillNormal}"/>
-            <Setter Property="BorderBrush" Value="{StaticResource CheckBoxStroke}"/>
-            <Setter Property="BorderThickness" Value="0"/>
-            <Setter Property="FocusVisualStyle" Value="{StaticResource EmptyCheckBoxFocusVisual}"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type CheckBox}">
-                        <Border x:Name="border" BorderBrush="Black" BorderThickness="0" Width="{TemplateBinding Width}" Height="{TemplateBinding Height}">
-                            <Border.Background>
-                                <ImageBrush ImageSource="pack://siteoforigin:,,,/KFYSY/Shelf/select.png"/>
-                            </Border.Background>
-                        </Border>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsChecked" Value="True">
-                                <Setter Property="Background" TargetName="border">
-                                    <Setter.Value>
-                                        <ImageBrush ImageSource="pack://siteoforigin:,,,/KFYSY/Shelf/select_s.png"/>
-                                    </Setter.Value>
-                                </Setter>
-
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
     </UserControl.Resources>
-    <!--<Grid>
-        <Border x:Name="border" BorderBrush="Gray" BorderThickness="0.5" >
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition Height="2"></RowDefinition>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="70"></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition Width="50"></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <Border BorderBrush="Gray" BorderThickness="0" 
-                            Width="60" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <Image x:Name="PART_IMG" Source="{Binding ElementName=UC, Path = Image}" Width="60" Height="60"/>
-                </Border>
-                <StackPanel Grid.Column="1" Orientation="Vertical" VerticalAlignment="Center" >
-                    <TextBlock Text="{Binding ElementName=UC, Path = MainText}" FontSize="16" HorizontalAlignment="Left" TextTrimming="WordEllipsis" TextWrapping="NoWrap"></TextBlock>
-                    <TextBlock Visibility="Collapsed" Text="{Binding ElementName=UC, Path = SubText}" Foreground="Gray" HorizontalAlignment="Left"></TextBlock>
-                    <TextBlock Text="{Binding ElementName=UC, Path = FootText}" Foreground="Gray"  HorizontalAlignment="Left"></TextBlock>
-                </StackPanel>
-                <Image Height="24" Grid.Column="2" Visibility="{Binding IsSelectable, ElementName=UC, Converter={StaticResource BooleanToVisibilityParamConverter}, ConverterParameter=reverse}" Source="pack://siteoforigin:,,,/OrangeCube/Shelf/enter_arrow.png" ></Image>
-              
-            </Grid>
-        </Border>
-        <Button Width="{Binding ElementName=UC, Path=Width}" Height="{Binding ElementName=UC, Path=Height}" Click="Button_Click"  Background="Transparent" Style="{StaticResource PlainBtnStyle}" >
-        </Button>
-    </Grid>-->
+    <Canvas>
+        <Image Width="93" Height="68" Canvas.Left="10" Canvas.Top="10" Source="{Binding PhotoImageSource}"/>
+        <!--<TextBlock Text="{Binding TextTop}" FontSize="18" Canvas.Left="10" Canvas.Top="10"/>
+        <TextBlock Text="{Binding TextMiddle}" FontSize="16" Canvas.Left="10" Canvas.Top="10"/>
+        <TextBlock Text="{Binding TextBottom}" FontSize="12" Canvas.Left="10" Canvas.Top="10"/>-->
+        <TextBlock Text="有了这本书从此不再做一个" FontSize="18" Foreground="White" Canvas.Left="117" Canvas.Top="10"/>
+        <TextBlock Text="李力  北京大学医院" FontSize="16" Foreground="White" Canvas.Left="117" Canvas.Top="41"/>
+        <TextBlock Text="09：00-09：15" FontSize="12" Foreground="White" Canvas.Left="117" Canvas.Top="62"/>
+    </Canvas>
 </UserControl>

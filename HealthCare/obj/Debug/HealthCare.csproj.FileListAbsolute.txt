@@ -98,3 +98,4 @@ E:\赵立江\WorkSpace\GIT\HealthCare\HealthCare\obj\Debug\CustomControls\ImageR
 E:\赵立江\WorkSpace\GIT\HealthCare\HealthCare\obj\Debug\Views\HallView.baml
 E:\赵立江\WorkSpace\GIT\HealthCare\HealthCare\obj\Debug\CustomControls\ImageRichTextControl.g.cs
 E:\赵立江\WorkSpace\GIT\HealthCare\HealthCare\obj\Debug\Views\HallView.g.cs
+E:\赵立江\WorkSpace\GIT\HealthCare\HealthCare\obj\Debug\GeneratedInternalTypeHelper.g.cs

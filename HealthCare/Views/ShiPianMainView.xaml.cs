@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HealthCare.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,12 @@ namespace HealthCare.Views
     /// </summary>
     public partial class ShiPianMainView : Page
     {
+        ShiPianMainViewModel _viewModel = null;
         public ShiPianMainView()
         {
             InitializeComponent();
+            _viewModel = new ShiPianMainViewModel();
+            this.DataContext = _viewModel;
         }
     }
 }

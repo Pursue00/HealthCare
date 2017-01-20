@@ -39,6 +39,14 @@ namespace HealthCare.ViewModels
                 base.NotifyChanged("ProfilePictureImageSource");
             }
         }
+        private bool _previewColor;
+
+        public bool PreviewColor
+        {
+            get { return _previewColor; }
+            set { _previewColor = value; base.NotifyChanged("PreviewColor"); }
+        }
+        
         #endregion
 
         #region Constructors
